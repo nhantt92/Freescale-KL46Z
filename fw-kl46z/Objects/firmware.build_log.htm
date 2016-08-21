@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: nhan DVRD01, nhantt, LIC=BUUII-TSZLN-VD1KA-1Y08U-7LG2I-RFC57
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.11
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+E:\project-fpt\Project\firmware\iot.uvprojx
+Project File Date:  08/14/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'wifi-node'
+compiling main.c...
+.\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __sys-tick__h
+.\inc\sys-tick.h(2): warning:  #2775-D: white space is required between the macro name "__sys" and its replacement text
+  #define __sys-tick__h
+.\inc\sys-tick.h(6): warning:  #1295-D: Deprecated declaration Init_Sys_Tick - give arg types
+  void Init_Sys_Tick();
+.\inc\sys-tick.h(7): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler();
+.\inc\dht11.h(13): warning:  #1295-D: Deprecated declaration DHT11_Init - give arg types
+  void DHT11_Init();
+.\inc\dht11.h(14): warning:  #1295-D: Deprecated declaration DHT11_Start - give arg types
+  unsigned char DHT11_Start();
+.\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif /* __DHT11_H */
+.\inc\dht22.h(10): warning:  #1295-D: Deprecated declaration DHT22_Init - give arg types
+  void DHT22_Init();
+.\inc\dht22.h(11): warning:  #1295-D: Deprecated declaration DHT22_Start - give arg types
+  unsigned char DHT22_Start();
+.\inc\bh1750.h(30): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
+  void Gpio_Init();
+.\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+src\main.c: 12 warnings, 0 errors
+compiling uart.c...
+.\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __sys-tick__h
+.\inc\sys-tick.h(2): warning:  #2775-D: white space is required between the macro name "__sys" and its replacement text
+  #define __sys-tick__h
+.\inc\sys-tick.h(6): warning:  #1295-D: Deprecated declaration Init_Sys_Tick - give arg types
+  void Init_Sys_Tick();
+.\inc\sys-tick.h(7): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler();
+.\inc\dht11.h(13): warning:  #1295-D: Deprecated declaration DHT11_Init - give arg types
+  void DHT11_Init();
+.\inc\dht11.h(14): warning:  #1295-D: Deprecated declaration DHT11_Start - give arg types
+  unsigned char DHT11_Start();
+.\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif /* __DHT11_H */
+.\inc\dht22.h(10): warning:  #1295-D: Deprecated declaration DHT22_Init - give arg types
+  void DHT22_Init();
+.\inc\dht22.h(11): warning:  #1295-D: Deprecated declaration DHT22_Start - give arg types
+  unsigned char DHT22_Start();
+.\inc\bh1750.h(30): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
+  void Gpio_Init();
+.\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+src\uart.c(24): warning:  #550-D: variable "dummy" was set but never used
+        char dummy;
+src\uart.c(152): warning:  #550-D: variable "Buffer" was set but never used
+        uint8_t Buffer;
+src\uart.c: 14 warnings, 0 errors
+compiling sys-tick.c...
+.\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __sys-tick__h
+.\inc\sys-tick.h(2): warning:  #2775-D: white space is required between the macro name "__sys" and its replacement text
+  #define __sys-tick__h
+.\inc\sys-tick.h(6): warning:  #1295-D: Deprecated declaration Init_Sys_Tick - give arg types
+  void Init_Sys_Tick();
+.\inc\sys-tick.h(7): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler();
+src\sys-tick.c: 4 warnings, 0 errors
+compiling dht11.c...
+.\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __sys-tick__h
+.\inc\sys-tick.h(2): warning:  #2775-D: white space is required between the macro name "__sys" and its replacement text
+  #define __sys-tick__h
+.\inc\sys-tick.h(6): warning:  #1295-D: Deprecated declaration Init_Sys_Tick - give arg types
+  void Init_Sys_Tick();
+.\inc\sys-tick.h(7): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler();
+.\inc\dht11.h(13): warning:  #1295-D: Deprecated declaration DHT11_Init - give arg types
+  void DHT11_Init();
+.\inc\dht11.h(14): warning:  #1295-D: Deprecated declaration DHT11_Start - give arg types
+  unsigned char DHT11_Start();
+.\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif /* __DHT11_H */
+src\dht11.c: 7 warnings, 0 errors
+compiling i2c.c...
+compiling gpio.c...
+.\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
+  void Gpio_Init();
+.\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+src\gpio.c: 2 warnings, 0 errors
+assembling startup_MKL46Z4.s...
+compiling system_MKL46Z4.c...
+linking...
+Program Size: Code=3136 RO-data=224 RW-data=40 ZI-data=368  
+FromELF: creating hex file...
+".\Objects\firmware.axf" - 0 Error(s), 39 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.4.0.pack
+                Keil::Device:Startup:1.0.0
+                Freescale Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\project-fpt\Project\firmware\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
+      Source file:   Device\Source\system_MKL46Z4.c
+</pre>
+</body>
+</html>

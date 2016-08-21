@@ -1,0 +1,12 @@
+#include "MKL46Z4.h"
+#include "uart.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "sys-tick.h"
+#include "dht11.h"
+#include "dht22.h"
+#include "i2c.h"
+#include "bh1750.h"
+#include "gpio.h"
+

@@ -1,0 +1,13 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\uart.o"
+".\objects\sys-tick.o"
+".\objects\dht11.o"
+".\objects\i2c.o"
+".\objects\gpio.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\firmware.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\firmware.map" -o .\Objects\firmware.axf
