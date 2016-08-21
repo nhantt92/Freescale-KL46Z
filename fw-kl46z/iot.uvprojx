@@ -433,6 +433,16 @@
               <FilePath>.\src\dht11.c</FilePath>
             </File>
             <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>bh1750.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\bh1750.c</FilePath>
+            </File>
+            <File>
               <FileName>i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\i2c.c</FilePath>

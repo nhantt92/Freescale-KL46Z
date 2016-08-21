@@ -50,7 +50,7 @@ void SetUpWifi();
 WiFiClient espClient;
 PubSubClient client(espClient);
 void MQTTconnect();
-char msg[128];
+char msg[256];
 char msg_r[128];
 void callback(char* topic, byte* payload, unsigned int length);
 

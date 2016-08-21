@@ -94,7 +94,7 @@ void I2C_Deinit(I2C_Type* p)
 }
 
 
-void I2C1_Init(I2C_Type* p)   //Magnetometro
+void I2C_Init(I2C_Type* p)   //Magnetometro
 {
     SIM->SCGC4 |= SIM_SCGC4_I2C1_MASK;
 

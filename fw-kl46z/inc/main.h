@@ -5,7 +5,6 @@
 #include "string.h"
 #include "sys-tick.h"
 #include "dht11.h"
-#include "dht22.h"
 #include "i2c.h"
 #include "bh1750.h"
 #include "gpio.h"

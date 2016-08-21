@@ -22,6 +22,6 @@ unsigned char I2C_Get_Ack(I2C_Type* p);
 void I2C0_Init(I2C_Type* p); //Acelerometro
 void I2C_Deinit(I2C_Type* p);
 void I2C_Init(I2C_Type* p);  //Magnetometro
-
+//I2C1_Init(I2C_Type* p) ;
 #endif
 

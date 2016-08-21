@@ -22,7 +22,7 @@ Dialog DLL:      TARMCM1.DLL V1.9.0.0
  
 <h2>Project:</h2>
 E:\project-fpt\Project\firmware\iot.uvprojx
-Project File Date:  08/14/2016
+Project File Date:  08/21/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
@@ -42,17 +42,19 @@ compiling main.c...
   unsigned char DHT11_Start();
 .\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
   #endif /* __DHT11_H */
-.\inc\dht22.h(10): warning:  #1295-D: Deprecated declaration DHT22_Init - give arg types
-  void DHT22_Init();
-.\inc\dht22.h(11): warning:  #1295-D: Deprecated declaration DHT22_Start - give arg types
-  unsigned char DHT22_Start();
-.\inc\bh1750.h(30): warning:  #1-D: last line of file ends without a newline
-  #endif
+.\inc\bh1750.h(5): warning:  #1295-D: Deprecated declaration BH1750_init - give arg types
+  void BH1750_init();
+.\inc\bh1750.h(7): warning:  #1295-D: Deprecated declaration read_bh1750 - give arg types
+  uint16_t read_bh1750();
 .\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
   void Gpio_Init();
 .\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
   #endif
-src\main.c: 12 warnings, 0 errors
+.\inc\bh1750.h(5): warning:  #1295-D: Deprecated declaration BH1750_init - give arg types
+  void BH1750_init();
+.\inc\bh1750.h(7): warning:  #1295-D: Deprecated declaration read_bh1750 - give arg types
+  uint16_t read_bh1750();
+src\main.c: 13 warnings, 0 errors
 compiling uart.c...
 .\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
   #ifndef __sys-tick__h
@@ -68,21 +70,23 @@ compiling uart.c...
   unsigned char DHT11_Start();
 .\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
   #endif /* __DHT11_H */
-.\inc\dht22.h(10): warning:  #1295-D: Deprecated declaration DHT22_Init - give arg types
-  void DHT22_Init();
-.\inc\dht22.h(11): warning:  #1295-D: Deprecated declaration DHT22_Start - give arg types
-  unsigned char DHT22_Start();
-.\inc\bh1750.h(30): warning:  #1-D: last line of file ends without a newline
-  #endif
+.\inc\bh1750.h(5): warning:  #1295-D: Deprecated declaration BH1750_init - give arg types
+  void BH1750_init();
+.\inc\bh1750.h(7): warning:  #1295-D: Deprecated declaration read_bh1750 - give arg types
+  uint16_t read_bh1750();
 .\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
   void Gpio_Init();
 .\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
   #endif
+.\inc\bh1750.h(5): warning:  #1295-D: Deprecated declaration BH1750_init - give arg types
+  void BH1750_init();
+.\inc\bh1750.h(7): warning:  #1295-D: Deprecated declaration read_bh1750 - give arg types
+  uint16_t read_bh1750();
 src\uart.c(24): warning:  #550-D: variable "dummy" was set but never used
         char dummy;
 src\uart.c(152): warning:  #550-D: variable "Buffer" was set but never used
         uint8_t Buffer;
-src\uart.c: 14 warnings, 0 errors
+src\uart.c: 15 warnings, 0 errors
 compiling sys-tick.c...
 .\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
   #ifndef __sys-tick__h
@@ -109,19 +113,33 @@ compiling dht11.c...
 .\inc\dht11.h(17): warning:  #1-D: last line of file ends without a newline
   #endif /* __DHT11_H */
 src\dht11.c: 7 warnings, 0 errors
-compiling i2c.c...
 compiling gpio.c...
 .\inc\gpio.h(6): warning:  #1295-D: Deprecated declaration Gpio_Init - give arg types
   void Gpio_Init();
 .\inc\gpio.h(8): warning:  #1-D: last line of file ends without a newline
   #endif
 src\gpio.c: 2 warnings, 0 errors
+compiling bh1750.c...
+.\inc\bh1750.h(5): warning:  #1295-D: Deprecated declaration BH1750_init - give arg types
+  void BH1750_init();
+.\inc\bh1750.h(7): warning:  #1295-D: Deprecated declaration read_bh1750 - give arg types
+  uint16_t read_bh1750();
+.\inc\sys-tick.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __sys-tick__h
+.\inc\sys-tick.h(2): warning:  #2775-D: white space is required between the macro name "__sys" and its replacement text
+  #define __sys-tick__h
+.\inc\sys-tick.h(6): warning:  #1295-D: Deprecated declaration Init_Sys_Tick - give arg types
+  void Init_Sys_Tick();
+.\inc\sys-tick.h(7): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler();
+src\bh1750.c: 6 warnings, 0 errors
+compiling i2c.c...
 assembling startup_MKL46Z4.s...
 compiling system_MKL46Z4.c...
 linking...
-Program Size: Code=3136 RO-data=224 RW-data=40 ZI-data=368  
+Program Size: Code=3940 RO-data=228 RW-data=56 ZI-data=368  
 FromELF: creating hex file...
-".\Objects\firmware.axf" - 0 Error(s), 39 Warning(s).
+".\Objects\firmware.axf" - 0 Error(s), 47 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -147,8 +165,8 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:4.1.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_MKL46Z4.s
       Source file:   Device\Source\system_MKL46Z4.c
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
 </pre>
 </body>
 </html>

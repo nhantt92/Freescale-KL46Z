@@ -15,7 +15,7 @@
 .\objects\main.o: .\inc\sys-tick.h
 .\objects\main.o: .\inc\dht11.h
 .\objects\main.o: .\inc\utils.h
-.\objects\main.o: .\inc\dht22.h
 .\objects\main.o: .\inc\i2c.h
 .\objects\main.o: .\inc\bh1750.h
 .\objects\main.o: .\inc\gpio.h
+.\objects\main.o: .\inc\bh1750.h
